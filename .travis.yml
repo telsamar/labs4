@@ -4,7 +4,7 @@ language: "minimal"
 services:
   - docker
 env:
-  - DOCKER_IMAGE="toliak/bootstrap-cpp"
+  - DOCKER_IMAGE="telsamar/bootstrap-cpp"
 
 before_script:
   - docker pull $DOCKER_IMAGE
