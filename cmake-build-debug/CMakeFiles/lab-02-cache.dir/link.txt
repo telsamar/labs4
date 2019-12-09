@@ -1,0 +1,1 @@
+/usr/bin/c++   -pedantic -Werror -Wall -Wextra -Wno-unused-command-line-argument -Wshadow -Wnon-virtual-dtor -g   CMakeFiles/lab-02-cache.dir/sources/Cli.cpp.o CMakeFiles/lab-02-cache.dir/sources/Experiment.cpp.o CMakeFiles/lab-02-cache.dir/sources/main.cpp.o  -o lab-02-cache 
