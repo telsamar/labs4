@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/lab-02-cache.iml" filepath="$PROJECT_DIR$/.idea/lab-02-cache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/lab-04-boost-filesystem.iml" filepath="$PROJECT_DIR$/.idea/lab-04-boost-filesystem.iml" />
     </modules>
   </component>
 </project>

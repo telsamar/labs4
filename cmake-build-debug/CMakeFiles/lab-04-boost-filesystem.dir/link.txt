@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblab-04-boost-filesystemd.a  CMakeFiles/lab-04-boost-filesystem.dir/sources/main.cpp.o CMakeFiles/lab-04-boost-filesystem.dir/sources/BrokerResolver.cpp.o
+/usr/bin/ranlib liblab-04-boost-filesystemd.a

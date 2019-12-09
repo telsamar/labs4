@@ -48,10 +48,10 @@ RM = /home/maus/jetbrains/clion-2019.1.3/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/maus/homeworks/lab2-cache/lab-02-cache
+CMAKE_SOURCE_DIR = /home/maus/homeworks/iu10/lab4/lab-04-boost-filesystem
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/maus/homeworks/lab2-cache/lab-02-cache/cmake-build-debug
+CMAKE_BINARY_DIR = /home/maus/homeworks/iu10/lab4/lab-04-boost-filesystem/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -91,9 +91,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maus/homeworks/lab2-cache/lab-02-cache/cmake-build-debug/CMakeFiles /home/maus/homeworks/lab2-cache/lab-02-cache/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maus/homeworks/iu10/lab4/lab-04-boost-filesystem/cmake-build-debug/CMakeFiles /home/maus/homeworks/iu10/lab4/lab-04-boost-filesystem/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maus/homeworks/lab2-cache/lab-02-cache/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maus/homeworks/iu10/lab4/lab-04-boost-filesystem/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,71 +122,70 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named lab-02-cache
+# Target rules for targets named tests
 
 # Build rule for target.
-lab-02-cache: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lab-02-cache
-.PHONY : lab-02-cache
+tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tests
+.PHONY : tests
 
 # fast build rule for target.
-lab-02-cache/fast:
-	$(MAKE) -f CMakeFiles/lab-02-cache.dir/build.make CMakeFiles/lab-02-cache.dir/build
-.PHONY : lab-02-cache/fast
+tests/fast:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
+.PHONY : tests/fast
 
-sources/Cli.o: sources/Cli.cpp.o
+#=============================================================================
+# Target rules for targets named lab-04-boost-filesystem
 
-.PHONY : sources/Cli.o
+# Build rule for target.
+lab-04-boost-filesystem: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lab-04-boost-filesystem
+.PHONY : lab-04-boost-filesystem
+
+# fast build rule for target.
+lab-04-boost-filesystem/fast:
+	$(MAKE) -f CMakeFiles/lab-04-boost-filesystem.dir/build.make CMakeFiles/lab-04-boost-filesystem.dir/build
+.PHONY : lab-04-boost-filesystem/fast
+
+#=============================================================================
+# Target rules for targets named lab-04-boost-filesystemDemo
+
+# Build rule for target.
+lab-04-boost-filesystemDemo: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lab-04-boost-filesystemDemo
+.PHONY : lab-04-boost-filesystemDemo
+
+# fast build rule for target.
+lab-04-boost-filesystemDemo/fast:
+	$(MAKE) -f CMakeFiles/lab-04-boost-filesystemDemo.dir/build.make CMakeFiles/lab-04-boost-filesystemDemo.dir/build
+.PHONY : lab-04-boost-filesystemDemo/fast
+
+sources/BrokerResolver.o: sources/BrokerResolver.cpp.o
+
+.PHONY : sources/BrokerResolver.o
 
 # target to build an object file
-sources/Cli.cpp.o:
-	$(MAKE) -f CMakeFiles/lab-02-cache.dir/build.make CMakeFiles/lab-02-cache.dir/sources/Cli.cpp.o
-.PHONY : sources/Cli.cpp.o
+sources/BrokerResolver.cpp.o:
+	$(MAKE) -f CMakeFiles/lab-04-boost-filesystem.dir/build.make CMakeFiles/lab-04-boost-filesystem.dir/sources/BrokerResolver.cpp.o
+.PHONY : sources/BrokerResolver.cpp.o
 
-sources/Cli.i: sources/Cli.cpp.i
+sources/BrokerResolver.i: sources/BrokerResolver.cpp.i
 
-.PHONY : sources/Cli.i
-
-# target to preprocess a source file
-sources/Cli.cpp.i:
-	$(MAKE) -f CMakeFiles/lab-02-cache.dir/build.make CMakeFiles/lab-02-cache.dir/sources/Cli.cpp.i
-.PHONY : sources/Cli.cpp.i
-
-sources/Cli.s: sources/Cli.cpp.s
-
-.PHONY : sources/Cli.s
-
-# target to generate assembly for a file
-sources/Cli.cpp.s:
-	$(MAKE) -f CMakeFiles/lab-02-cache.dir/build.make CMakeFiles/lab-02-cache.dir/sources/Cli.cpp.s
-.PHONY : sources/Cli.cpp.s
-
-sources/Experiment.o: sources/Experiment.cpp.o
-
-.PHONY : sources/Experiment.o
-
-# target to build an object file
-sources/Experiment.cpp.o:
-	$(MAKE) -f CMakeFiles/lab-02-cache.dir/build.make CMakeFiles/lab-02-cache.dir/sources/Experiment.cpp.o
-.PHONY : sources/Experiment.cpp.o
-
-sources/Experiment.i: sources/Experiment.cpp.i
-
-.PHONY : sources/Experiment.i
+.PHONY : sources/BrokerResolver.i
 
 # target to preprocess a source file
-sources/Experiment.cpp.i:
-	$(MAKE) -f CMakeFiles/lab-02-cache.dir/build.make CMakeFiles/lab-02-cache.dir/sources/Experiment.cpp.i
-.PHONY : sources/Experiment.cpp.i
+sources/BrokerResolver.cpp.i:
+	$(MAKE) -f CMakeFiles/lab-04-boost-filesystem.dir/build.make CMakeFiles/lab-04-boost-filesystem.dir/sources/BrokerResolver.cpp.i
+.PHONY : sources/BrokerResolver.cpp.i
 
-sources/Experiment.s: sources/Experiment.cpp.s
+sources/BrokerResolver.s: sources/BrokerResolver.cpp.s
 
-.PHONY : sources/Experiment.s
+.PHONY : sources/BrokerResolver.s
 
 # target to generate assembly for a file
-sources/Experiment.cpp.s:
-	$(MAKE) -f CMakeFiles/lab-02-cache.dir/build.make CMakeFiles/lab-02-cache.dir/sources/Experiment.cpp.s
-.PHONY : sources/Experiment.cpp.s
+sources/BrokerResolver.cpp.s:
+	$(MAKE) -f CMakeFiles/lab-04-boost-filesystem.dir/build.make CMakeFiles/lab-04-boost-filesystem.dir/sources/BrokerResolver.cpp.s
+.PHONY : sources/BrokerResolver.cpp.s
 
 sources/main.o: sources/main.cpp.o
 
@@ -194,7 +193,8 @@ sources/main.o: sources/main.cpp.o
 
 # target to build an object file
 sources/main.cpp.o:
-	$(MAKE) -f CMakeFiles/lab-02-cache.dir/build.make CMakeFiles/lab-02-cache.dir/sources/main.cpp.o
+	$(MAKE) -f CMakeFiles/lab-04-boost-filesystem.dir/build.make CMakeFiles/lab-04-boost-filesystem.dir/sources/main.cpp.o
+	$(MAKE) -f CMakeFiles/lab-04-boost-filesystemDemo.dir/build.make CMakeFiles/lab-04-boost-filesystemDemo.dir/sources/main.cpp.o
 .PHONY : sources/main.cpp.o
 
 sources/main.i: sources/main.cpp.i
@@ -203,7 +203,8 @@ sources/main.i: sources/main.cpp.i
 
 # target to preprocess a source file
 sources/main.cpp.i:
-	$(MAKE) -f CMakeFiles/lab-02-cache.dir/build.make CMakeFiles/lab-02-cache.dir/sources/main.cpp.i
+	$(MAKE) -f CMakeFiles/lab-04-boost-filesystem.dir/build.make CMakeFiles/lab-04-boost-filesystem.dir/sources/main.cpp.i
+	$(MAKE) -f CMakeFiles/lab-04-boost-filesystemDemo.dir/build.make CMakeFiles/lab-04-boost-filesystemDemo.dir/sources/main.cpp.i
 .PHONY : sources/main.cpp.i
 
 sources/main.s: sources/main.cpp.s
@@ -212,8 +213,36 @@ sources/main.s: sources/main.cpp.s
 
 # target to generate assembly for a file
 sources/main.cpp.s:
-	$(MAKE) -f CMakeFiles/lab-02-cache.dir/build.make CMakeFiles/lab-02-cache.dir/sources/main.cpp.s
+	$(MAKE) -f CMakeFiles/lab-04-boost-filesystem.dir/build.make CMakeFiles/lab-04-boost-filesystem.dir/sources/main.cpp.s
+	$(MAKE) -f CMakeFiles/lab-04-boost-filesystemDemo.dir/build.make CMakeFiles/lab-04-boost-filesystemDemo.dir/sources/main.cpp.s
 .PHONY : sources/main.cpp.s
+
+tests/test.o: tests/test.cpp.o
+
+.PHONY : tests/test.o
+
+# target to build an object file
+tests/test.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/test.cpp.o
+.PHONY : tests/test.cpp.o
+
+tests/test.i: tests/test.cpp.i
+
+.PHONY : tests/test.i
+
+# target to preprocess a source file
+tests/test.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/test.cpp.i
+.PHONY : tests/test.cpp.i
+
+tests/test.s: tests/test.cpp.s
+
+.PHONY : tests/test.s
+
+# target to generate assembly for a file
+tests/test.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/test.cpp.s
+.PHONY : tests/test.cpp.s
 
 # Help Target
 help:
@@ -223,17 +252,19 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... lab-02-cache"
 	@echo "... test"
-	@echo "... sources/Cli.o"
-	@echo "... sources/Cli.i"
-	@echo "... sources/Cli.s"
-	@echo "... sources/Experiment.o"
-	@echo "... sources/Experiment.i"
-	@echo "... sources/Experiment.s"
+	@echo "... tests"
+	@echo "... lab-04-boost-filesystem"
+	@echo "... lab-04-boost-filesystemDemo"
+	@echo "... sources/BrokerResolver.o"
+	@echo "... sources/BrokerResolver.i"
+	@echo "... sources/BrokerResolver.s"
 	@echo "... sources/main.o"
 	@echo "... sources/main.i"
 	@echo "... sources/main.s"
+	@echo "... tests/test.o"
+	@echo "... tests/test.i"
+	@echo "... tests/test.s"
 .PHONY : help
 
 

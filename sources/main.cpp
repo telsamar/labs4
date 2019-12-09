@@ -1,43 +1,32 @@
 // Copyright 2019 <telsamar>
 #include <iostream>
 
-#include "HardwareData.h"
-#include "Cli.h"
+#include "BrokerResolver.h"
 
-int main()
+int main(int argc, char *argv[])
 {
-    auto levels = Cli::input<size_t>("Enter amount of cache levels: ");
-
-    std::vector<size_t> cacheMemory;
-    for (size_t i = 0; i < levels; i++) {
-        cacheMemory.push_back(
-                Cli::input<size_t>("Enter L" + std::to_string(i + 1)
-                              + " size (KiB): "));
+    boost::filesystem::path path = "";
+    if (argc > 1) {
+        path = argv[1];
     }
 
-    ExperimentInitData initData = ExperimentInitData::getExperimentData({
-         cacheMemory,
-                                                                        });
+    BrokerResolver resolver{};
+    resolver.resolve(path);
 
-    ExperimentData result{
-            {
-                    Investigation::doInvestigation(
-                            Investigation::Forward,
-                            initData.bufferSizes),
-                    Investigation::doInvestigation(
-                            Investigation::Backward,
-                            initData.bufferSizes),
-                    Investigation::doInvestigation(
-                            Investigation::Random,
-                            initData.bufferSizes),
-            },
-    };
+    std::cout << "FILES: \n";
+    for (const BrokerFile &file : resolver.getFileCollection()) {
+        std::cout << file.directoriesToString() << " " <<
+                  file.filename << std::endl;
+    }
 
-    std::cout << "\n\n\nYAML Report:\n" <<
-         Cli::experimentDataToYamlString(result) << std::endl;
-
-    std::cout << "\n\n\nHTML Report:\n" <<
-         Cli::experimentDataToHtmlString(result) << std::endl;
+    std::cout << "\nDATA: \n";
+    for (const auto &pair : resolver.getDataCollection()) {
+        std::cout << "broker:" << pair.first.broker
+                  << " account:" << pair.first.account
+                  << " files:" << pair.second.files
+                  << " lastdate:" << pair.second.lastDate
+                  << std::endl;
+    }
 
     return 0;
 }

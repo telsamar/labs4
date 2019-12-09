@@ -1,4 +1,4 @@
-# Install script for directory: /home/maus/homeworks/lab2-cache/lab-02-cache
+# Install script for directory: /home/maus/homeworks/iu10/lab4/lab-04-boost-filesystem
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/maus/homeworks/lab2-cache/lab-02-cache/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/maus/homeworks/iu10/lab4/lab-04-boost-filesystem/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

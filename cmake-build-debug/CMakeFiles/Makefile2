@@ -59,45 +59,119 @@ RM = /home/maus/jetbrains/clion-2019.1.3/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/maus/homeworks/lab2-cache/lab-02-cache
+CMAKE_SOURCE_DIR = /home/maus/homeworks/iu10/lab4/lab-04-boost-filesystem
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/maus/homeworks/lab2-cache/lab-02-cache/cmake-build-debug
+CMAKE_BINARY_DIR = /home/maus/homeworks/iu10/lab4/lab-04-boost-filesystem/cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/lab-02-cache.dir
+# Target rules for target CMakeFiles/tests.dir
 
 # All Build rule for target.
-CMakeFiles/lab-02-cache.dir/all:
-	$(MAKE) -f CMakeFiles/lab-02-cache.dir/build.make CMakeFiles/lab-02-cache.dir/depend
-	$(MAKE) -f CMakeFiles/lab-02-cache.dir/build.make CMakeFiles/lab-02-cache.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maus/homeworks/lab2-cache/lab-02-cache/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target lab-02-cache"
-.PHONY : CMakeFiles/lab-02-cache.dir/all
+CMakeFiles/tests.dir/all: CMakeFiles/lab-04-boost-filesystem.dir/all
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/depend
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maus/homeworks/iu10/lab4/lab-04-boost-filesystem/cmake-build-debug/CMakeFiles --progress-num=6,7 "Built target tests"
+.PHONY : CMakeFiles/tests.dir/all
 
 # Include target in all.
-all: CMakeFiles/lab-02-cache.dir/all
+all: CMakeFiles/tests.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/lab-02-cache.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maus/homeworks/lab2-cache/lab-02-cache/cmake-build-debug/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lab-02-cache.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maus/homeworks/lab2-cache/lab-02-cache/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/lab-02-cache.dir/rule
+CMakeFiles/tests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maus/homeworks/iu10/lab4/lab-04-boost-filesystem/cmake-build-debug/CMakeFiles 5
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tests.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maus/homeworks/iu10/lab4/lab-04-boost-filesystem/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/tests.dir/rule
 
 # Convenience name for target.
-lab-02-cache: CMakeFiles/lab-02-cache.dir/rule
+tests: CMakeFiles/tests.dir/rule
 
-.PHONY : lab-02-cache
-
-# clean rule for target.
-CMakeFiles/lab-02-cache.dir/clean:
-	$(MAKE) -f CMakeFiles/lab-02-cache.dir/build.make CMakeFiles/lab-02-cache.dir/clean
-.PHONY : CMakeFiles/lab-02-cache.dir/clean
+.PHONY : tests
 
 # clean rule for target.
-clean: CMakeFiles/lab-02-cache.dir/clean
+CMakeFiles/tests.dir/clean:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/clean
+.PHONY : CMakeFiles/tests.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/tests.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/lab-04-boost-filesystem.dir
+
+# All Build rule for target.
+CMakeFiles/lab-04-boost-filesystem.dir/all:
+	$(MAKE) -f CMakeFiles/lab-04-boost-filesystem.dir/build.make CMakeFiles/lab-04-boost-filesystem.dir/depend
+	$(MAKE) -f CMakeFiles/lab-04-boost-filesystem.dir/build.make CMakeFiles/lab-04-boost-filesystem.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maus/homeworks/iu10/lab4/lab-04-boost-filesystem/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target lab-04-boost-filesystem"
+.PHONY : CMakeFiles/lab-04-boost-filesystem.dir/all
+
+# Include target in all.
+all: CMakeFiles/lab-04-boost-filesystem.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/lab-04-boost-filesystem.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maus/homeworks/iu10/lab4/lab-04-boost-filesystem/cmake-build-debug/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lab-04-boost-filesystem.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maus/homeworks/iu10/lab4/lab-04-boost-filesystem/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/lab-04-boost-filesystem.dir/rule
+
+# Convenience name for target.
+lab-04-boost-filesystem: CMakeFiles/lab-04-boost-filesystem.dir/rule
+
+.PHONY : lab-04-boost-filesystem
+
+# clean rule for target.
+CMakeFiles/lab-04-boost-filesystem.dir/clean:
+	$(MAKE) -f CMakeFiles/lab-04-boost-filesystem.dir/build.make CMakeFiles/lab-04-boost-filesystem.dir/clean
+.PHONY : CMakeFiles/lab-04-boost-filesystem.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/lab-04-boost-filesystem.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/lab-04-boost-filesystemDemo.dir
+
+# All Build rule for target.
+CMakeFiles/lab-04-boost-filesystemDemo.dir/all: CMakeFiles/lab-04-boost-filesystem.dir/all
+	$(MAKE) -f CMakeFiles/lab-04-boost-filesystemDemo.dir/build.make CMakeFiles/lab-04-boost-filesystemDemo.dir/depend
+	$(MAKE) -f CMakeFiles/lab-04-boost-filesystemDemo.dir/build.make CMakeFiles/lab-04-boost-filesystemDemo.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maus/homeworks/iu10/lab4/lab-04-boost-filesystem/cmake-build-debug/CMakeFiles --progress-num=4,5 "Built target lab-04-boost-filesystemDemo"
+.PHONY : CMakeFiles/lab-04-boost-filesystemDemo.dir/all
+
+# Include target in all.
+all: CMakeFiles/lab-04-boost-filesystemDemo.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/lab-04-boost-filesystemDemo.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maus/homeworks/iu10/lab4/lab-04-boost-filesystem/cmake-build-debug/CMakeFiles 5
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lab-04-boost-filesystemDemo.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maus/homeworks/iu10/lab4/lab-04-boost-filesystem/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/lab-04-boost-filesystemDemo.dir/rule
+
+# Convenience name for target.
+lab-04-boost-filesystemDemo: CMakeFiles/lab-04-boost-filesystemDemo.dir/rule
+
+.PHONY : lab-04-boost-filesystemDemo
+
+# clean rule for target.
+CMakeFiles/lab-04-boost-filesystemDemo.dir/clean:
+	$(MAKE) -f CMakeFiles/lab-04-boost-filesystemDemo.dir/build.make CMakeFiles/lab-04-boost-filesystemDemo.dir/clean
+.PHONY : CMakeFiles/lab-04-boost-filesystemDemo.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/lab-04-boost-filesystemDemo.dir/clean
 
 .PHONY : clean
 
