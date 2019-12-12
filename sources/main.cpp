@@ -1,4 +1,4 @@
-// Copyright 2019 <Maus74>
+// Copyright 2019 <telsamar>
 #include <iostream>
 
 #include "BrokerResolver.h"

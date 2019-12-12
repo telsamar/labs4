@@ -1,4 +1,4 @@
-// Copyright 2019 <Kondr11>
+// Copyright 2019 <telsamar>
 #include <gtest/gtest.h>
 #include "BrokerResolver.h"
 

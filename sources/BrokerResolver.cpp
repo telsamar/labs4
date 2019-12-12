@@ -1,4 +1,4 @@
-// Copyright 2019 <maus74>
+// Copyright 2019 <telsamar>
 #include "BrokerResolver.h"
 
 #include <boost/lexical_cast.hpp>
