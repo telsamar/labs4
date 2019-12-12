@@ -1,8 +1,3 @@
-[![Build Status](https://travis-ci.com/Toliak/lab0305.svg?branch=master)](https://travis-ci.com/Toliak/lab0305)
-[![coverage](https://gitlab.toliak.ru/bmstu-cpp-3-sem/lab0305/badges/master/pipeline.svg)](https://gitlab.toliak.ru/bmstu-cpp-3-sem/lab0305/pipelines)
-![Code size](https://img.shields.io/github/languages/code-size/Toliak/lab0305.svg)
-![GitHub Repo size](https://img.shields.io/github/repo-size/Toliak/lab0305.svg)
-
 # Лабораторная работа №4
 
 Лабораторная работа посвящена изучению работы с файловой системой на языке **C++**. В стандарте **C++17** появилась библиотека для работы с [файловой системой](https://en.cppreference.com/w/cpp/filesystem). Но так как на данный момент еще не все компиляторы поддерживают новейший стандарт **C++** в этой лабораторный используется библиотека **boost::filesystem**, которая была взята за основу при разработке стандарта.

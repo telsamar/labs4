@@ -1,3 +1,4 @@
+// Copyright 2019 <maus74>
 #include "BrokerResolver.h"
 
 #include <boost/lexical_cast.hpp>
@@ -15,11 +16,13 @@ void BrokerResolver::saveFileIfCorrect(const boost::filesystem::path &path)
 {
     std::string filename = path.filename().string();
     boost::smatch result;
-    if (filename.find(".old") != std::string::npos || !boost::regex_match(filename, result, filenameChecker)) {
+    if (filename.find(".old") != std::string::npos
+        || !boost::regex_match(filename, result, filenameChecker)) {
         return;
     }
 
-    fileCollection.emplace_front(BrokerFile{path.filename().string(), currentDirectories});
+    fileCollection.emplace_front(BrokerFile{path.filename().string(),
+                                            currentDirectories});
 
     std::string broker = fileCollection.front().directoriesToString();
     auto account = boost::lexical_cast<size_t>(result[2]);
@@ -36,13 +39,14 @@ void BrokerResolver::saveFileIfCorrect(const boost::filesystem::path &path)
 
 void BrokerResolver::resolve(const boost::filesystem::path &path)
 {
-    for (const boost::filesystem::directory_entry &entry : boost::filesystem::directory_iterator{path}) {
-        boost::filesystem::path resolved = boost::filesystem::canonical(entry);
+    for (const boost::filesystem::directory_entry &entry :
+            boost::filesystem::directory_iterator{path}) {
+        boost::filesystem::path resolved =
+                boost::filesystem::canonical(entry);
 
         if (boost::filesystem::is_directory(resolved)) {
             currentDirectories.push_back(
-                boost::filesystem::path{entry}.stem().string()          // save origin name
-            );
+                    boost::filesystem::path{entry}.stem().string());
             resolve(resolved);
         } else if (boost::filesystem::is_regular_file(resolved)) {
             saveFileIfCorrect(entry);
@@ -55,5 +59,5 @@ void BrokerResolver::resolve(const boost::filesystem::path &path)
 }
 
 boost::regex BrokerResolver::filenameChecker{
-    R"((\w+)_(\d{8})_([12]\d{3}(0[1-9]|1[0-2])(0[1-9]|[12]\d|3[01])).txt)"
+        R"((\w+)_(\d{8})_([12]\d{3}(0[1-9]|1[0-2])(0[1-9]|[12]\d|3[01])).txt)"
 };

@@ -4,7 +4,7 @@
 #include <boost/regex.hpp>
 #include <forward_list>
 
-struct BrokerFile //opisanie faila
+struct BrokerFile
 {
     using DirsType = std::list<std::string>;
 
@@ -21,7 +21,7 @@ struct BrokerFile //opisanie faila
 
 struct BrokerData
 {
-    struct Pair // dannie brokera i nomer akaunta
+    struct Pair
     {
         std::string broker;
         size_t account;
@@ -40,14 +40,14 @@ struct BrokerData
         };
     };
 
-    struct Data //kol-vo failov i datu poslednei modifikacii
+    struct Data
     {
         size_t files = 0;
         std::string lastDate;
     };
 };
 
-class BrokerResolver //kollekciya dannih, kollekciyu failov, shabloni reg-h virazhenii dlya imeni failov
+class BrokerResolver
 {
 public:
     using Collection = std::forward_list<BrokerFile>;
