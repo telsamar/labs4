@@ -1,0 +1,6 @@
+/home/maus/homeworks/iu10/lab4/lab-04-boost-filesystem/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/maus/homeworks/iu10/lab4/lab-04-boost-filesystem/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/maus/homeworks/iu10/lab4/lab-04-boost-filesystem/cmake-build-debug/CMakeFiles/test.dir
+/home/maus/homeworks/iu10/lab4/lab-04-boost-filesystem/cmake-build-debug/CMakeFiles/tests.dir
+/home/maus/homeworks/iu10/lab4/lab-04-boost-filesystem/cmake-build-debug/CMakeFiles/lab-04-boost-filesystem.dir
+/home/maus/homeworks/iu10/lab4/lab-04-boost-filesystem/cmake-build-debug/CMakeFiles/lab-04-boost-filesystemDemo.dir

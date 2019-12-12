@@ -1,0 +1,39 @@
+/home/maus/jetbrains/clion-2019.1.3/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/maus/homeworks/iu10/lab4/lab-04-boost-filesystem
+-- The C compiler identification is GNU 7.4.0
+-- The CXX compiler identification is GNU 7.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- [hunter] Calculating Toolchain-SHA1
+-- [hunter] Calculating Config-SHA1
+-- [hunter] HUNTER_ROOT: /home/maus/.hunter
+-- [hunter] [ Hunter-ID: e14bc15 | Toolchain-ID: 511a137 | Config-ID: 2cb8efb ]
+-- [hunter] GTEST_ROOT: /home/maus/.hunter/_Base/e14bc15/511a137/2cb8efb/Install (ver.: 1.8.0-hunter-p11)
+-- [hunter] BOOST_ROOT: /home/maus/.hunter/_Base/e14bc15/511a137/2cb8efb/Install (ver.: 1.70.0-p0)
+-- [hunter] BOOST_ROOT: /home/maus/.hunter/_Base/e14bc15/511a137/2cb8efb/Install (ver.: 1.70.0-p0)
+-- [hunter] BOOST_ROOT: /home/maus/.hunter/_Base/e14bc15/511a137/2cb8efb/Install (ver.: 1.70.0-p0)
+-- Boost version: 1.70.0
+-- Found the following Boost libraries:
+--   filesystem
+--   regex
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/maus/homeworks/iu10/lab4/lab-04-boost-filesystem/cmake-build-debug
