@@ -1,0 +1,10 @@
+C:\Users\qwest\.CLion2019.2\system\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "\"C:/Users/qwest/Desktop/лаба толя/labs4\""
+CMake Error: The source directory "/cygdrive/c/Users/qwest/Desktop/Р»Р°Р±Р° С‚РѕР»СЏ/labs4/cmake-build-debug/"/"C:/Users/qwest/Desktop/Р»Р°Р±Р° С‚РѕР»СЏ/labs4/""" does not exist.
+Specify --help for usage, or press the help button on the CMake GUI.
+
+CMake Error:
+  ------------------------------------------------------------------------------------
+  Selected CMake might be incompatible with the Cygwin environment.
+  In order to run on Cygwin, CMake needs to be specially compiled.
+  Please select either CMake bundled with CLion or CMake from the Cygwin installation.
+  ------------------------------------------------------------------------------------
